@@ -3,6 +3,6 @@
 x=$RANDOM
 mkdir postdev_monitor_$x
 cd postdev_monitor_$x
-curl raw
+curl -O https://raw.githubusercontent.com/mb-rpetty/postdev_monitor/master/pdm.html
 python -m SimpleHTTPServer &
-open http://localhost:8080
+open http://localhost:8080/pdm.html
